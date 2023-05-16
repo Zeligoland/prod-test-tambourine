@@ -31,7 +31,8 @@
 
 .section__title {
     font-family: 'Cardo', serif;    
-    font-size: 6.0rem;    
+    font-size: 6.0rem; 
+    margin-top: 1.8rem;  
 }
 
 .section__service-list {
@@ -39,7 +40,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     list-style-type: none;
-    margin-top: 20px;
+    margin-top: 4.6rem;
     text-align: left;
   }
 
@@ -53,6 +54,13 @@
 }
 
 .section__service-item span {
-    color: var(--light-gray);
+    color: var(--green);
     margin-right: 10px;
+}
+
+.section_line-bottom {    
+  height: 1px;
+  width: 1170px;
+  margin: 0 auto;
+  background-color: var(--green);
 }
