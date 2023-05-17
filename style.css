@@ -122,12 +122,14 @@
     width: 70vh;
     text-align: left;
     padding: 6%;
+    position: relative; 
 }
 
 .section2__card-subheadline{
     font-family: 'Montserrat', sans-serif;
     color: var(--green);
     font-size: 1.1rem;
+    margin-top: 2rem;
 }
 
 .section2__card-title {
@@ -162,6 +164,25 @@
     bottom: -3.5rem;
     right: -3.5rem;
     font-size: 10rem;
+}
+
+.section2__button-container {
+    position: absolute;
+    bottom: 3rem;
+    right: 4rem;    
+  }
+
+.button-container-left,
+.button-container-right {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.left-arrow-img,
+.right-arrow-img{
+    width: 5rem;
 }
 /* Estilos base para todas las pantallas */
 
