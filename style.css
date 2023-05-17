@@ -14,6 +14,8 @@
     padding: 0;
 }
 
+/*Sección 1*/
+
 .section1 {
     display: flex;
     flex-direction: column;
@@ -65,7 +67,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.0rem 2.0rem;
     list-style-type: none;
-    margin-top: 3.6rem;
+    margin-top: 2rem;
     text-align: left;
   }
 
@@ -92,10 +94,47 @@
   background-color: var(--green);
 }
 
+/*Sección 2*/
+
+.section2 {
+    width: 100%;
+    min-width: 320px;
+    height: 80vh;    
+    background-image: url('./assets/resort-img.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.section2__card-container {
+    display: flex;
+}
+
+.section2__card-text {
+    background-color: var(--just-white);
+    height: 60vh;
+    width: 60vh;
+}
+
+.section2__card-img {
+    height: 60vh;
+    width: 60vh;
+    background-image: url('./assets/resort-img-color.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
 /* Estilos base para todas las pantallas */
 
 /* Estilos para pantallas pequeñas */
-@media screen and (min-width: 375px) and (max-width: 768px){
+@media screen and (min-width: 320px) and (max-width: 768px){
+    /*Media queries para primera sección*/
+
     .section1 {
       margin: 5% 5%;
     }
@@ -108,13 +147,11 @@
         font-size: 2rem;        
     }
 
-    .section__title::before {
-        right: calc(105% + 10px);             
-      }
-      
-      .section__title::after {
-        left: calc(105% + 10px);        
-      }
+    .section__title::before, 
+    .section__title::after {
+        right: calc(100% + 10px);
+        width: 8rem;      
+      }    
 
     .section__service-list-container {
         width: 100%;
@@ -122,13 +159,20 @@
 
     .section__service-list {       
         grid-gap: 1.5rem;    
-        margin-top: 1.4rem;
-        margin-bottom: 1.4rem;      
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;      
+        grid-template-columns: repeat(1, 1fr);
       }
 
     .section__service-item  {
         font-size: 1rem;
     }
+
+    .section_line-bottom {    
+        width: 85%;        
+      }
+
+      /*Inicio media queries sección 2*/
    
   }
   
@@ -144,9 +188,3 @@
     }
   }*/
   
-  /* Estilos para pantallas extra grandes */
- /*@media screen and (min-width: 1200px) {
-    .section1 {
-      margin: 5% 25%;
-    }
-  }*/
