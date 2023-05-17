@@ -30,15 +30,36 @@
 }
 
 .section__title {
+    position: relative;
     font-family: 'Cardo', serif;    
     font-size: 6.0rem; 
     margin-top: 1.8rem;  
 }
 
+.section__title::before,
+.section__title::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 437px;
+  height: 1px;
+  background-color: var(--green);
+}
+
+.section__title::before {
+  right: calc(100% + 10px);
+  transform: translateY(-50%);
+}
+
+.section__title::after {
+  left: calc(100% + 10px);
+  transform: translateY(-50%);
+}
+
 .section__service-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: 1.0rem 5.0rem;
     list-style-type: none;
     margin-top: 4.6rem;
     text-align: left;
@@ -51,6 +72,8 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    letter-spacing: 0px;
+    opacity: 1;
 }
 
 .section__service-item span {
