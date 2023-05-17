@@ -20,7 +20,7 @@
     align-items: center;
     justify-content: center;    
     text-align: center;
-    margin: 132px 375px;
+    margin: 5% 10%;
 }
 
 .section__small-title {
@@ -56,18 +56,22 @@
   transform: translateY(-50%);
 }
 
+.section__service-list-container {
+    width: 100%;    
+}
+
 .section__service-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.0rem 5.0rem;
+    grid-gap: 1.0rem 2.0rem;
     list-style-type: none;
-    margin-top: 4.6rem;
+    margin-top: 3.6rem;
     text-align: left;
   }
 
 .section__service-item {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 2.0rem;
+    font-size: 1.5rem;
     white-space: nowrap;
     display: flex;
     align-items: center;
@@ -83,7 +87,66 @@
 
 .section_line-bottom {    
   height: 1px;
-  width: 1170px;
+  width: 85%;
   margin: 0 auto;
   background-color: var(--green);
 }
+
+/* Estilos base para todas las pantallas */
+
+/* Estilos para pantallas pequeñas */
+/*@media screen and (min-width: 375px) {
+    .section1 {
+      margin: 5% 5%;
+    }
+
+    .section__small-title {       
+        font-size: 0.9rem;    
+    }
+
+    .section__title {
+        font-size: 2rem;        
+    }
+
+    .section__title::before {
+        right: calc(105% + 10px);             
+      }
+      
+      .section__title::after {
+        left: calc(105% + 10px);        
+      }
+
+    .section__service-list-container {
+        width: 100%;
+    }
+
+    .section__service-list {       
+        grid-gap: 1.5rem;    
+        margin-top: 1.4rem;
+        margin-bottom: 1.4rem;      
+      }
+
+    .section__service-item  {
+        font-size: 1rem;
+    }
+   
+  }*/
+  
+  /* Estilos para pantallas medianas */
+  @media screen and (min-width: 768px) {
+    
+  }
+  
+  /* Estilos para pantallas grandes */
+ /* @media screen and (min-width: 1024px) {
+    .section1 {
+      margin: 5% 20%;
+    }
+  }*/
+  
+  /* Estilos para pantallas extra grandes */
+ /*@media screen and (min-width: 1200px) {
+    .section1 {
+      margin: 5% 25%;
+    }
+  }*/
