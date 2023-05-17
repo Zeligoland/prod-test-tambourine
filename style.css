@@ -26,14 +26,14 @@
 .section__small-title {
     font-family: 'Montserrat', sans-serif;
     color: var(--green);
-    font-size: 1.4rem;    
+    font-size: 1.2rem;    
 }
 
 .section__title {
     position: relative;
     font-family: 'Cardo', serif;    
-    font-size: 6.0rem; 
-    margin-top: 1.8rem;  
+    font-size: 5.5rem; 
+    margin-top: 1.5rem;  
 }
 
 .section__title::before,
@@ -95,7 +95,7 @@
 /* Estilos base para todas las pantallas */
 
 /* Estilos para pantallas pequeñas */
-/*@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 768px){
     .section1 {
       margin: 5% 5%;
     }
@@ -130,7 +130,7 @@
         font-size: 1rem;
     }
    
-  }*/
+  }
   
   /* Estilos para pantallas medianas */
   @media screen and (min-width: 768px) {
