@@ -6,6 +6,7 @@
     --brown: #8B553C;
     --light-gray: #D3D3D3;
     --black: #0000;
+    --black-variant: #1B1B1B;
 }
 
 * {
@@ -99,7 +100,7 @@
 .section2 {
     width: 100%;
     min-width: 320px;
-    height: 80vh;    
+    height: 90vh;    
     background-image: url('./assets/resort-img.jpg');
     background-position: center;
     background-size: cover;
@@ -117,17 +118,50 @@
 
 .section2__card-text {
     background-color: var(--just-white);
-    height: 60vh;
-    width: 60vh;
+    height: 70vh;
+    width: 70vh;
+    text-align: left;
+    padding: 6%;
+}
+
+.section2__card-subheadline{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--green);
+    font-size: 1.1rem;
+}
+
+.section2__card-title {
+    font-family: 'Cardo', serif;    
+    color: var(--gray);
+    font-size: 3.5rem; 
+    margin-top: 1rem;
+}
+
+.section2__card-text--p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.1rem;
+    color: var(--black-variant);
+    line-height: 2rem;
+
 }
 
 .section2__card-img {
-    height: 60vh;
-    width: 60vh;
+    height: 70vh;
+    width: 70vh;
     background-image: url('./assets/resort-img-color.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: contain;
+    position: relative;
+}
+
+.section2__card-img h2 {
+    font-family: 'Cardo', serif; 
+    color: var(--just-white);
+    position: absolute;
+    bottom: -3.5rem;
+    right: -3.5rem;
+    font-size: 10rem;
 }
 /* Estilos base para todas las pantallas */
 
