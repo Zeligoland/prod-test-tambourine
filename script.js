@@ -40,7 +40,7 @@ function updateContent() {
   cardImage.style.backgroundImage = currentContent.imageSrc;
 }
 
-let currentIndex = 0;
+let currentIndex = 1;
 
 rightButton.addEventListener('click', () => {
   currentIndex++;
