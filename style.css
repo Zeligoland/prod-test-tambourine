@@ -157,7 +157,7 @@
     position: relative;
 }
 
-.section2__card-img h2 {
+.section2__card-img p {
     font-family: 'Cardo', serif; 
     color: var(--just-white);
     position: absolute;

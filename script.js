@@ -32,8 +32,7 @@ const contentData = [
 
 function updateContent() {
   const currentContent = contentData[currentIndex];
-  console.log(currentContent);
-
+  
   cardTitle.textContent = currentContent.title;
   cardText.textContent = currentContent.text;
   cardNumber.textContent = currentContent.number;
