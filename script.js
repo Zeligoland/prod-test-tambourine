@@ -55,16 +55,9 @@ leftButton.addEventListener('click', () => {
   currentIndex--;
 
   if (currentIndex < 0) {
-    currentIndex = 0;
+    currentIndex = 2;
   }
   updateContent();
 });
 
 updateContent();
-
-/*leftButton.addEventListener("click", () => {
-    cardTitle.textContent = "Amazing Cinema";
-    cardText.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed erat sed nunc ultrices ultrices."
-    cardNumber.textContent = "01"
-    cardImage.style.backgroundImage = 'url("./assets/cinema-img.jpg")'
-})*/
