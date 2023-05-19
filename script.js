@@ -12,7 +12,7 @@ const cardNumber = document.getElementById('section2__card-number');
 const contentData = [
   {
     title: 'Amazing Cinema',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed erat sed nunc ultrices ultrices.',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed erat sed nunc ultrices ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     number: '01',
     imageSrc: 'url("./assets/cinema-img.jpg")',
   },
@@ -24,7 +24,7 @@ const contentData = [
   },
   {
     title: 'Uniqualed Rooms',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed erat sed nunc ultrices ultrices.',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed erat sed nunc ultrices ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     number: '03',
     imageSrc: 'url("./assets/room-img.jpg")',
   },
