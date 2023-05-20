@@ -1,4 +1,4 @@
-// Obteniendo elementos del HTML
+// Getting elements from HTML
 
 const leftButton = document.getElementById('button-container-left');
 const rightButton = document.getElementById('button-container-right');
@@ -30,14 +30,18 @@ const contentData = [
   },
 ];
 
+// Function to add the content of the array[index] to the HTML
+
 function updateContent() {
   const currentContent = contentData[currentIndex];
-  
+
   cardTitle.textContent = currentContent.title;
   cardText.textContent = currentContent.text;
   cardNumber.textContent = currentContent.number;
   cardImage.style.backgroundImage = currentContent.imageSrc;
 }
+
+// Add event listeners that execute the function and update the counter.
 
 let currentIndex = 1;
 

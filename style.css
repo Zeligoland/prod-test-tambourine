@@ -15,6 +15,8 @@
   padding: 0;
 }
 
+
+/*Base styles built for medium and large screens*/
 /*Section 1*/
 
 .section1 {
@@ -255,11 +257,11 @@ cursor: pointer;
   cursor: pointer;
 }
 
-/* Estilos base para todas las pantallas */
-/*Estilos para pantallas pequeñas y medianas(mobile S,M,L & Tablets)*/
+/*Styles for small and medium screens(mobile, S, M, L & Tablets)*/
 
 @media screen and (min-width: 320px) and (max-width: 768px){
-  /*Media queries para primera sección*/
+  
+  /*Media Queries section 1*/
 
   .section1, .section2, .section3 {    
     overflow-x: hidden;
@@ -299,7 +301,7 @@ cursor: pointer;
       margin-bottom: 2rem;    
     }
 
-    /*Inicio media queries sección 2*/
+    /*Media Queries section 2*/
 
     .section2{
       height: 100vh;
@@ -364,7 +366,7 @@ cursor: pointer;
     right: 0.5rem;   
     }
  
-  /*Inicio media queries sección 3*/
+  /*Media Queries section 3*/
 
   .section3 {
     flex-direction: column;
@@ -400,7 +402,7 @@ cursor: pointer;
     }
   }
 
-/* Estilos para pantallas medianas, tablet y laptop pequeña */
+/* Styles for tablets and small laptops*/
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   
@@ -428,9 +430,17 @@ cursor: pointer;
     margin-bottom: 2rem;    
   }
 }
-/* Estilos para pantallas medianas, laptop y tablet grande */
- /*Estilos para pantallas grandes*/
-@media screen and (min-width: 1024px){
 
- 
+/*Large Screens Adjustments*/
+
+@media screen and (min-width: 1280px) {
+  
+  .section2 {
+    overflow-x: hidden;
+  }
+
+  .section2__card-img p{
+    bottom: -9%;
+    right: 5%;
+  }
 }
