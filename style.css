@@ -381,21 +381,21 @@ cursor: pointer;
     margin-top: 1rem;
     margin: 2rem;    
   }
-
-    .section3__card-subheadline {
+  
+  .section3__card-subheadline {
       font-size: 0.9rem;
     }
 
-    .section3__card-title{
+  .section3__card-title{
       font-size: 2rem;
     }
 
-    .section3__card-container{
+  .section3__card-container{
       margin-top:2rem;
       width: 88%;
     }
 
-    .section3__card-text--p{
+  .section3__card-text--p{
       font-size: 1rem;
     }
   }
@@ -436,12 +436,5 @@ cursor: pointer;
   }  
     .section__service-list {               
     grid-template-columns: repeat(3, 1fr);
-  }
-  
-  /*Section2*/
-
-  .section2__card-img p {
-    bottom: -10%;
-    right: -8%;    
   }
 }
