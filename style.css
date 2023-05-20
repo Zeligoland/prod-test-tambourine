@@ -74,7 +74,7 @@ transform: translateY(-50%);
 
 .section__service-item {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   white-space: nowrap;
   display: flex;
   align-items: center;
@@ -431,10 +431,6 @@ cursor: pointer;
 /* Estilos para pantallas medianas, laptop y tablet grande */
  /*Estilos para pantallas grandes*/
 @media screen and (min-width: 1024px){
-  .section1, .section2, .section3 {    
-    overflow-x: hidden;
-  }  
-    .section__service-list {               
-    grid-template-columns: repeat(3, 1fr);
-  }
+
+ 
 }
