@@ -258,7 +258,7 @@ cursor: pointer;
 /* Estilos base para todas las pantallas */
 
 /* Estilos para pantallas pequeñas */
-@media screen and (min-width: 320px) and (max-width: 768px){
+@media screen and (min-width: 375px) and (max-width: 768px){
   /*Media queries para primera sección*/
 
   .section1, .section2, .section3 {    
@@ -317,7 +317,8 @@ cursor: pointer;
     }
 
     .section2__card-text {
-      padding: 0rem;        
+      padding: 0rem;  
+      /**/width: 100%;           
   }
     
     .section2__card-subheadline{
@@ -341,6 +342,10 @@ cursor: pointer;
   .right-arrow-img,
   .left-arrow-img {        
       width: 3rem;
+  }
+
+  .section2__card-img{
+    width: 100%;
   }
  
   .section2__card-img p {
