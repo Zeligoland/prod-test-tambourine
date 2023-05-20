@@ -385,6 +385,7 @@ cursor: pointer;
 
     .section3__card-container{
       margin-top:2rem;
+      width: 100%;
     }
 
     .section3__card-text--p{
