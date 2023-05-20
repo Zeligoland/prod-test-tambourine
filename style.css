@@ -74,7 +74,7 @@ transform: translateY(-50%);
 
 .section__service-item {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   white-space: nowrap;
   display: flex;
   align-items: center;
@@ -256,9 +256,9 @@ cursor: pointer;
 }
 
 /* Estilos base para todas las pantallas */
+/*Estilos para pantallas pequeñas y medianas(mobile S,M,L & Tablets)*/
 
-/* Estilos para pantallas pequeñas */
-@media screen and (min-width: 375px) and (max-width: 768px){
+@media screen and (min-width: 320px) and (max-width: 768px){
   /*Media queries para primera sección*/
 
   .section1, .section2, .section3 {    
@@ -318,11 +318,12 @@ cursor: pointer;
 
     .section2__card-text {
       padding: 0rem;  
-      /**/width: 100%;           
+      width: 100%; 
+      height: 100%;          
   }
     
     .section2__card-subheadline{
-      margin-top: 1.5rem;
+      margin-top: 1rem;
       font-size: 0.9rem;        
       margin-left: 1%;
   }
@@ -349,18 +350,18 @@ cursor: pointer;
   }
  
   .section2__card-img p {
-    bottom: -14%;
-    right: 14%;
+    bottom: -9%;
+    right: 0%;
     font-size: 6rem;
   }
 
-    .section2__card-container {
+  .section2__card-container {
       width: 100%;
   }
 
   .section2__button-container {
     bottom: 0.4rem;
-    right: 3.5rem;   
+    right: 0.5rem;   
     }
  
   /*Inicio media queries sección 3*/
@@ -373,6 +374,12 @@ cursor: pointer;
   .section3__card-img{        
     display:flex;  
     margin-right: 0;
+    width: 95%;
+  }
+
+  .section3__card-text {
+    margin-top: 1rem;
+    margin: 2rem;    
   }
 
     .section3__card-subheadline {
@@ -385,7 +392,7 @@ cursor: pointer;
 
     .section3__card-container{
       margin-top:2rem;
-      width: 100%;
+      width: 88%;
     }
 
     .section3__card-text--p{
@@ -400,7 +407,7 @@ cursor: pointer;
 .section__title::before, 
 .section__title::after {
     right: calc(100% + 10px);
-    width: 8rem;      
+    width: 190%;      
   }    
 
 .section__service-list-container {
@@ -421,14 +428,20 @@ cursor: pointer;
     margin-bottom: 2rem;    
   }
 }
-
-  /*Seccion 2*/
-  
-
-
-/* Estilos para pantallas grandes */
-/* @media screen and (min-width: 1024px) {
-  .section1 {
-    margin: 5% 20%;
+/* Estilos para pantallas medianas, laptop y tablet grande */
+ /*Estilos para pantallas grandes*/
+@media screen and (min-width: 1024px){
+  .section1, .section2, .section3 {    
+    overflow-x: hidden;
+  }  
+    .section__service-list {               
+    grid-template-columns: repeat(3, 1fr);
   }
-}*/
+  
+  /*Section2*/
+
+  .section2__card-img p {
+    bottom: -10%;
+    right: -8%;    
+  }
+}
